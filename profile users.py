@@ -11,7 +11,7 @@ f=Faker()
 num=1
 start=time.time()
 
-cx=bd.connect('file.bd')
+cx=bd.connect('file.db')
 cu=cx.execute('create table if not exists users(numb integer,id integer, name text,email text,age integer)')
 
 start1=time.time()
